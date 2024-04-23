@@ -4,6 +4,9 @@
 .settings
 lib
 *.mp3
+.DS_Store
+.idea
+__pycache__
 sounds/radio/03_DCR/desktop.ini
 sounds/radio/03_DCR/**
 sounds/radio/05_Institute/**
