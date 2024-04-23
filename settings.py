@@ -12,6 +12,8 @@ WIDTH = 720
 HEIGHT = 720
 FULLSCREEN = False
 
+GPIO_AVAILABLE=False
+
 # Menu Position
 menu_x = 10
 menu_y = 140
@@ -65,7 +67,7 @@ MODULES = {
 # MODULE_TEXT = ["RADIO","MAP","DATA","INV","STAT"]
 MODULE_TEXT = ["STAT", "INV", "DATA", "MAP", "RADIO"]
 
-STARTER_MODULE = "data"
+STARTER_MODULE = "stats"
 
 ACTIONS = {
     pygame.K_F1: "module_stats",
