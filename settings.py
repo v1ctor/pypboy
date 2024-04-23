@@ -36,7 +36,7 @@ dark = (0, 40, 0)
 
 # MAP
 # MAP_FOCUS = (-71.0594587, 42.3614408)  # Boston MA
-MAP_FOCUS = (51.5169638, -0.1186748)
+MAP_FOCUS = (-0.1186748, 51.5169638)
 LOAD_CACHED_MAP = False
 
 # Open Strett Map settings

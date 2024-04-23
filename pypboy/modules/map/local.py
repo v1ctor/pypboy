@@ -109,14 +109,8 @@ class Map(game.Entity):
                "&zoom=" + str(zoom) + "&size="
                + str(int(width/2)) + "x" + str(int(height/2))
                + "&scale=2"
-               # + "&maptype=" + str(map_type)
-               # + "&style=" + str(settings.MAP_STYLE)
-               #+ "&markers=color:blue%7Clabel:S%7C40.702147,-74.015794" +
-               #+ "&markers=color:green%7Clabel:G%7C40.711614,-74.012318" +
-               #+  "&markers=color:red%7Clabel:C%7C40.718217,-73.998284" +
-               + "&key=AIzaSyBGLrr7j1P_pMknv1vRbKD4X7xMScWxnzM"
+               + "&key=AIzaSyCYUilQ27AjkNWhJAviWj299bPWlFrwEbg"
                + "&map_id=f1a13570cd60f576"
-
                )
                 # Note the API string here is restricted you will need your own API string
 
