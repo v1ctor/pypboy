@@ -20,7 +20,7 @@ class Engine(object):
         pygame.init()
         
         if settings.FULLSCREEN == True or settings.PI == True:
-            self.window = pygame.display.set_mode((width, height), pygame.FULLSCREEN | pygame.DOUBLEBUF | pygame.HWSURFACE)
+            self.window = pygame.display.set_mode((width, height), pygame.FULLSCREEN | pygame.DOUBLEBUF | pygame.HWSURFACE | pygame.SCALED)
         else:
             self.window = pygame.display.set_mode((width, height), pygame.DOUBLEBUF | pygame.HWSURFACE)
         self.screen = pygame.display.get_surface()
