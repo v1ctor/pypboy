@@ -36,7 +36,6 @@ class Engine(object):
         self.last_render_time = 0
 
         self.prev_time = 0
-        self.rects_to_update = []
 
         self.prev_fps_time = 0
         self.fps_average = deque()
@@ -56,15 +55,12 @@ class Engine(object):
                 group.render()
                 group.draw(self.screen)
 
-            # if hasattr(self, 'active'):
-            #     self.active.render()
-
             current_time = time.time()
             fps_delta_time = current_time - self.prev_fps_time
             self.prev_fps_time = current_time
 
             #  FPS debugging
-            if fps_delta_time:
+            if settings.FPS_DEBUGGING and fps_delta_time:
                 fps = int(1 / fps_delta_time)
 
                 if len(self.fps_average) > 6:

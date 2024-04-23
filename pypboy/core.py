@@ -23,10 +23,6 @@ class Pypboy(game.core.Engine):
     prev_fps_time = 0
 
     def __init__(self, *args, **kwargs):
-        # Support rescaling
-        # if hasattr(settings, 'OUTPUT_WIDTH') and hasattr(settings, 'OUTPUT_HEIGHT'):
-        #     self.rescale = False
-
         # Initialize modules
         super(Pypboy, self).__init__(*args, **kwargs)
         self.init_persitant()
@@ -68,11 +64,6 @@ class Pypboy(game.core.Engine):
         for pin in self.gpio_actions.keys():
             if GPIO.input(pin) == False:
                 self.handle_action(self.gpio_actions[pin])
-
-    # def render(self):
-    #     super(Pypboy, self).render()
-    #     if hasattr(self, 'active'):
-    #         self.active.render()
 
     def switch_module(self, module):
         # if not settings.hide_top_menu:
@@ -143,15 +134,7 @@ class Pypboy(game.core.Engine):
                 if hasattr(self, 'active'):
                     self.active.handle_event(event)
 
-            # slow code debugger
-            # debug_time = time.time()
-
             self.render()
-            #
-            # time_past = time.time() - debug_time
-            # if time_past:
-            #     max_fps = int(1 / time_past)
-            #     print("self.render took:", time_past, "max fps:", max_fps)
 
         try:
             pygame.mixer.quit()

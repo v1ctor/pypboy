@@ -352,6 +352,7 @@ glitch = False
 glitch_time = 0.1
 glitch_next = 0
 
+FPS_DEBUGGING = False
 
 
 #
