@@ -109,8 +109,7 @@ class Map(game.Entity):
                "&zoom=" + str(zoom) + "&size="
                + str(int(width/2)) + "x" + str(int(height/2))
                + "&scale=2"
-               + "&key=AIzaSyCYUilQ27AjkNWhJAviWj299bPWlFrwEbg"
-               + "&map_id=f1a13570cd60f576"
+               + "&key=" + settings.GOOGLE_API_KEY
                )
                 # Note the API string here is restricted you will need your own API string
 

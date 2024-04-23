@@ -48,6 +48,8 @@ MAP_STYLE = "feature:all|geometry.stroke|labels.text.stroke"
 WORLD_MAP_ZOOM = 12
 LOCAL_MAP_ZOOM = 17
 
+GOOGLE_API_KEY="AIzaSyAmVYNW-VFzDq0fXF6XPsP63Xl-mO6e9MA"
+
 EVENTS = {
     'SONG_END': pygame.USEREVENT + 1,
     'PLAYPAUSE': pygame.USEREVENT + 2,
