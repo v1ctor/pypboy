@@ -117,8 +117,6 @@ class Scanlines(game.core.Entity):
 
     def __init__(self):
         super(Scanlines, self).__init__((settings.WIDTH, 129))
-        # self.width = 720
-        # self.height = 1600
         self.image = pygame.image.load('images/scanline.png').convert_alpha()
         self.rectimage = self.image.get_rect()
         self.rect[1] = 0

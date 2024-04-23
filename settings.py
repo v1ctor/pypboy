@@ -5,15 +5,12 @@ import saved
 import os
 
 # Custom
-name = "ZapWizard"
+name = "Victor"
 
 # SCREEN
 WIDTH = 720
 HEIGHT = 720
 FULLSCREEN = False
-
-# OUTPUT_WIDTH = 720
-# OUTPUT_HEIGHT = 720
 
 # Menu Position
 menu_x = 10
@@ -36,13 +33,8 @@ dim = (0, 70, 0)
 dark = (0, 40, 0)
 
 # MAP
-# MAP_FOCUS = (-5.9347681, 54.5889076)
-# MAP_FOCUS = (-102.3016145, 21.8841274) #Old Default?
-# MAP_FOCUS = (-118.5723894,34.3917171)#CodeNinjasValencia
-# MAP_FOCUS = (32.7157, 117.1611)
-# MAP_FOCUS = (-92.1943197, 38.5653437)
-# MAP_FOCUS = (-98.0878917, 30.1914818) # Zap's Hometown
-MAP_FOCUS = (-71.0594587, 42.3614408)  # Boston MA
+# MAP_FOCUS = (-71.0594587, 42.3614408)  # Boston MA
+MAP_FOCUS = (51.5169638, -0.1186748)
 LOAD_CACHED_MAP = False
 
 # Open Strett Map settings
@@ -101,7 +93,7 @@ ACTIONS = {
 # GPIO 23 pin16 reboot
 # GPIO 25 pin 22 blank screen do not use
 GPIO_ACTIONS = {
-    #    19: "module_stats", #GPIO 4
+        36: "module_stats", #GPIO 4
     #    26: "module_items", #GPIO 14
     #    16: "module_data", #GPIO 15
     #	18:	"knob_1", #GPIO 18 Do Not enable messes with the screen.
